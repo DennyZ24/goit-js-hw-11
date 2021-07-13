@@ -1,7 +1,16 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+* {
+  box-sizing: border-box;
+}
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    'Helvetica Neue', sans-serif;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
