@@ -19,6 +19,10 @@ let isTimerActiv = false;
 let intervalId = null;
 
 function onInputBlur() {
+  if (isTimerActiv) {
+    return
+  }
+
   chooseData = dataInputEl.valueAsDate;
   
   if (chooseData === null) {
@@ -72,6 +76,8 @@ function startTimer() {
 
 function stopTimer() {
   clearInterval(intervalId)
+
+  isTimerActiv = false;
 }
 
 function pad(value) {
